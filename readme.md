@@ -1,34 +1,16 @@
 #PH Package
 
+This code is only useful with Verilion blender app. You probably won't find a use for it.
+
 ## Use this in production
 
-* Add the repository to composer.json:
-
-
-~~~~
-"repositories": [
-    {
-      "type": "vcs",
-      "url": "git@bitbucket.org:tsawler/ph-package.git"
-    }
-    ],
-    "require": {
-~~~~
-
-* Add the package in composer.json
-
-~~~~
-    "torann/geoip": "^1.0",
-    "tsawler/phpackage": "dev-master",
-    "unisharp/laravel-filemanager": "^1.8",
-~~~~
-
-* run composer update
-* run php artisan:vendor publish
+1. composer require tsawler/phpackage
+2. run composer update
+3. run php artisan:vendor publish
 
 ## Setup Instructions for development
 
-1. Install a new Laravel 5.5 app
+1. Install a new blender 5.5 app
 2. Clone this package
 3. Put contents of this package into laravel app at this location: <root>/packages/tsawler/phpackage
 4. Add this the the app's composer.json file:
