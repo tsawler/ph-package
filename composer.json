@@ -1,0 +1,25 @@
+{
+  "name": "tsawler/phpackage",
+  "description": "Planet Hatch customizations",
+  "authors": [
+    {
+      "name": "Trevor Sawler",
+      "email": "trevor.sawler@gmail.com"
+    }
+  ],
+  "require": {
+    "laravelcollective/html": "5.5.*"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Tsawler\\Phpackage\\PHPackageServiceProvider"
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Tsawler\\Phpackage\\": "src"
+    }
+  }
+}
